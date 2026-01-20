@@ -2,23 +2,41 @@ import java.text.NumberFormat.Style;
 
 public class Practice {
     public static void main(String[] args) {
-        // System.out.println(head.value);
-        // System.out.println(head.next);
-        Node head = new Node('z', null);
-        Node ryan = new Node('s', null);
-        head.next = ryan;
+        // // System.out.println(head.value);
+        // // System.out.println(head.next);
+        // Node head = new Node('z', null);
+        // Node ryan = new Node('s', null);
+        // head.next = ryan;
 
-        ryan.next = new Node('t', null);
+        // ryan.next = new Node('t', null);
 
-        ryan.next.next = new Node('x', null);
-        //true
-        System.out.println(contains(head, 's'));
-        //false
-        System.out.println(contains(head, 'a'));
-        // System.out.println(head.next.next.value);
-        remove(head, 't');
+        // ryan.next.next = new Node('x', null);
+        // //true
+        // System.out.println(contains(head, 's'));
+        // //false
+        // System.out.println(contains(head, 'a'));
+        // // System.out.println(head.next.next.value);
+        // remove(head, 't');
 
-        printList(head);
+        // printList(head);
+        myLL<Character> list = new myLL<>();
+
+        list.addToBack('x');
+        list.addToBack('m');
+        list.addToBack('v');
+        list.addToBack('a');
+
+        list.printList();
+        System.out.println();
+        list.printBackwards();
+        
+        myLL<Integer> intList = new myLL<>();
+        intList.addToBack(1);
+        intList.addToBack(99);
+        intList.addToBack(2);
+        intList.addToBack(-33333);
+        intList.addToBack(67);
+
     }
     public static void printList(Node start){
         Node current = start;
